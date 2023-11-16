@@ -1,6 +1,13 @@
 <html>
 <head>
+
+<!-- Disable Caching in browser -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 <script type="text/javascript" src="scripts.js"></script>
+
 <style type="text/css">
 	@font-face {
 		font-family: trajan;
@@ -34,22 +41,24 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: rgb(2,0,36, 0.3)
+		font-family: trajan;
 	}
 	.albumList {
 		display: flex;
 		padding: 15px;
 		align-items: center;
-		/*justify-content: center;*/
 	}
 	.albumList img {
 		height: 150px;
 		width: 150px;
-		padding-right: 25px;
+		margin-right: 25px;
+		/*horizontal, vertical, blue, color*/
+		box-shadow: 5px -5px 15px rgba(34,34,34,0.6);
 	}
 	.albumList p {
-		color: blue;
-		width: 300px;
+		color: black;
+		width: 315px;
+		text-shadow: 0 0 10px rgba(34, 34, 34, .6);
 	}
 
 </style>
@@ -57,10 +66,17 @@
 
 <body bgcolor="white">
 <div class="navbar">
+	<div style="display:flex; justify-content: right; flex-wrap: wrap;">
+	<a href="#">Home</a>
 	<a href="#">Discography</a>
-	<a href="#"><img src="art/logo.png" height="150px"></a>
+	</div>
+	<a href="#"><img src="art/logo.png" height="100px"></a>
+	<div style="display:flex; justify-content: left; flex-wrap: wrap;">
 	<a href="#">Amory Wars</a>
+	<a href="https://www.coheedandcambria.com/tour" target="_blank">Tour Dates</a>
+	</div>
 </div>
+<br>
 <script>printAlbum();</script>
 </body>
 
