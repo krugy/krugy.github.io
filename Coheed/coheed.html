@@ -1,5 +1,6 @@
 <html>
 <head>
+<script type="text/javascript" src="scripts.js"></script>
 <style type="text/css">
 	@font-face {
 		font-family: trajan;
@@ -13,13 +14,54 @@
 		text-align: center;
 		font-family: trajan;
 	}
+	.navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar a {
+		padding: 10px;
+		font-size: 18px;
+		font-family: trajan;
+		text-decoration: none;
+		color: black;
+	}
+	.navbar a:hover {
+		color: darkred;
+		transition: color .3s ease-in;
+	}
+	.albumColumn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: rgb(2,0,36, 0.3)
+	}
+	.albumList {
+		display: flex;
+		padding: 15px;
+		align-items: center;
+		/*justify-content: center;*/
+	}
+	.albumList img {
+		height: 150px;
+		width: 150px;
+		padding-right: 25px;
+	}
+	.albumList p {
+		color: blue;
+		width: 300px;
+	}
+
 </style>
 </head>
 
-<body>
-<div class="topDiv">
-	<h1>Coheed & Cambria</h1>
+<body bgcolor="white">
+<div class="navbar">
+	<a href="#">Discography</a>
+	<a href="#"><img src="art/logo.png" height="150px"></a>
+	<a href="#">Amory Wars</a>
 </div>
+<script>printAlbum();</script>
 </body>
 
 </html>
