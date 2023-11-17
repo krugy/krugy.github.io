@@ -26,7 +26,7 @@ const albums = [
 	new albumItem("art/SSTB.jpg", "The Second Stage Turbine Blade", 2002),
 	new albumItem("art/SE3.jpg", "In Keeping Secrets of Silent Earth: 3", 2003),
 	new albumItem("art/apollo1.jpg", "Good Apollo, I'm Burning Star IV Vol I: From Fear Through the Eyes of Madness", 2005),
-	new albumItem("art/apollo2.jpg", "Good Apollo, I'm Burning Star IV Vol II: No World for Tomorrow", 2007),
+	new albumItem("art/apollo2.jpg", "Good Apollo, I'm Burning Star IV Vol II:No World for Tomorrow", 2007),
 	new albumItem("art/rainbow.jpg", "Year of the Black Rainbow", 2010),
 	new albumItem("art/ascension.jpg", "The Afterman: Ascension", 2012),
 	new albumItem("art/descension.jpg", "The Afterman: Descension", 2013),

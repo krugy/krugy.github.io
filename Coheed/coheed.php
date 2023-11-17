@@ -21,22 +21,6 @@
 		text-align: center;
 		font-family: trajan;
 	}
-	.navbar {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.navbar a {
-		padding: 10px;
-		font-size: 18px;
-		font-family: trajan;
-		text-decoration: none;
-		color: black;
-	}
-	.navbar a:hover {
-		color: darkred;
-		transition: color .3s ease-in;
-	}
 	.albumColumn {
 		display: flex;
 		flex-direction: column;
@@ -60,22 +44,12 @@
 		width: 315px;
 		text-shadow: 0 0 10px rgba(34, 34, 34, .6);
 	}
-
 </style>
 </head>
 
 <body bgcolor="white">
-<div class="navbar">
-	<div style="display:flex; justify-content: right; flex-wrap: wrap;">
-	<a href="#">Home</a>
-	<a href="#">Discography</a>
-	</div>
-	<a href="#"><img src="art/logo.png" height="100px"></a>
-	<div style="display:flex; justify-content: left; flex-wrap: wrap;">
-	<a href="#">Amory Wars</a>
-	<a href="https://www.coheedandcambria.com/tour" target="_blank">Tour Dates</a>
-	</div>
-</div>
+<?php include 'coheedNav.php';?>
+
 <br>
 <script>printAlbum();</script>
 </body>
